@@ -3,7 +3,7 @@
 
 //---------------------------------------------------顏色---------//
 // 定義顏色 此顏色可自由變換
-$primaryColor: #0066cc; //主色
+$primaryColor: rgba(120, 149, 172, 1); //主色
 $secondaryColor: #781f79; //輔色
 $lightColor: #fec003; //點綴
 $linkColor: #0066cc; //連結
@@ -30,10 +30,17 @@ $form-btn: #0066cc; //表單
 //------------------------------------------------------字型--------//
 
 // 字型設定
-$font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體,
-Arial, sans-serif;
+// $font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體,
+// Arial, sans-serif;
 
-$font-size: 1em;
+$font-family: 'Noto Sans TC';
+
+$font-size: 1em;	// body
+
+$title: 150%;
+$subtitle: 125%;
+$caption: 87.5%;
+
 
 //------------------------------------------------------格線系統-----//
 
@@ -51,8 +58,10 @@ $screen-xs-flex: 320px  !default;			//極小尺寸 - flex
 
 //-------------------------------------------------------客製化------//
 
-$fatfooterBgColor: #f1f1f1; //fatFooter 底色
+// $fatfooterBgColor: #f1f1f1; //fatFooter 底色
 
 //--------------------------------------------------------客製化------//
 
 $rounded-angle: 10px; //整站導角
+
+
