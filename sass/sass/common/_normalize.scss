@@ -159,7 +159,8 @@ img {
     }
 }
 svg:not(:root) {
-    overflow: hidden;
+    // overflow: hidden;
+    overflow: visible;
 }
 figure {
     margin: 1em 40px;

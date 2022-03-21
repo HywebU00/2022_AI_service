@@ -25,7 +25,6 @@
             width: 360px;
             height: 70%;
         }
-
     </style>
 </head>
 
@@ -40,10 +39,10 @@
                     <b>凌網科技智能客服<span>說明</span></b>
                 </div>
                 <div class="btn_grp">
-                    <a href="#" class="btn_service_switch" alt="開關"><img src="images/icon_header_functions.svg" alt=""></a>
-                    <a href="#" class="btn_service_switch" alt="刪除"><img src="images/icon_header_minus.svg" alt=""></a>
+                    <a href="#" class="btn btn_service_switch" id="btn_1" alt="開關"><img src="images/icon_header_functions.svg" alt="" class="svg"></a>
+                    <a href="#" class="btn btn_service_switch" alt="刪除"><img src="images/icon_header_minus.svg" alt="" class="svg"></a>
                 </div>
-                <!-- 服務列表 -->
+                <!-- 服務列表 style="display: none;" -->
                 <div class="service_list" style="display: none;">
                     <a href="#"><img src="images/icon_smile.svg" alt=""><span>服務名稱一</span></a>
                     <a href="#"><img src="images/icon_smile.svg" alt=""><span>服務名稱二</span></a>
@@ -63,7 +62,9 @@
                         <!-- 客服icon -->
                         <div class="service_icon"><img src="images/icon_header_service.svg" alt=""></div>
                         <!-- 客服訊息內容 -->
-                        <div class="service_message">Hi～我是凌網科技智能客服，很高興為您服務 😊 需要什麼協助呢？</div>
+                        <div class="service_wrap">
+                            <div class="service_message">Hi～我是凌網科技智能客服，很高興為您服務 😊 需要什麼協助呢？</div>
+                        </div>
                         <!-- 訊息發送時間 -->
                         <div class="received_time">AM 09:10</div>
                     </div>
@@ -73,6 +74,16 @@
                         <div class="user_message">使用者輸入文字內容</div>
                         <!-- 訊息發送時間 -->
                         <div class="received_time">AM 10:10</div>
+                    </div>
+                    <div class="message_received">
+                        <!-- 客服icon -->
+                        <div class="service_icon"><img src="images/icon_header_service.svg" alt=""></div>
+                        <!-- 客服訊息內容 -->
+                        <div class="service_wrap">
+                            <div class="service_message">恩，為何？</div>
+                        </div>
+                        <!-- 訊息發送時間 -->
+                        <div class="received_time">AM 09:10</div>
                     </div>
                     <div class="message_user">
                         <!-- 訊息內容 -->
@@ -85,17 +96,25 @@
                         <!-- 客服icon -->
                         <div class="service_icon"><img src="images/icon_header_service.svg" alt=""></div>
                         <!-- 客服訊息內容 -->
-                        <div class="service_message">
-                            <h3 class="title">標題</h3>
-                            <p>項目文字敘述項目文字敘述項目文字敘述</p>
-                            <p>項目文字敘述</p>
-                            <p>項目文字敘述</p>
+                        <div class="service_wrap">
+                            <!-- <div class="service_message">
+                                <h3 class="title">標題</h3>
+                                <p>項目文字敘述項目文字敘述項目文字敘述</p>
+                                <p>項目文字敘述</p>
+                                <p>項目文字敘述</p>
+                            </div> -->
+                            <div class="service_message">
+                                <h3 class="title">標題</h3>
+                                <p>項目文字敘述</p>
+                                <p>項目文字敘述</p>
+                                <p>項目文字敘述</p>
+                            </div>
                         </div>
                         <!-- 回饋 -->
                         <div class="feedback">
                             <b>有幫助？</b>
-                            <a href="#" class="btn"><img src="images/icon_smile.svg" alt="" class="svg">是是是</a>
-                            <a href="#" class="btn disable"><img src="images/icon_sad.svg" alt="">否</a>
+                            <a href="#" class="btn"><img src="images/icon_smile.svg" alt="" class="svg">是</a>
+                            <a href="#" class="btn disable"><img src="images/icon_sad.svg" alt="" class="svg">disable</a>
                         </div>
                         <!-- 訊息發送時間 -->
                         <div class="received_time">AM 09:10</div>
@@ -104,33 +123,74 @@
                     <div class="message_received">
                         <!-- 客服icon -->
                         <div class="service_icon"><img src="images/icon_header_service.svg" alt=""></div>
-                        <!-- 客服訊息內容 -->
-                        <div class="service_message">
-                            <h3 class="title_pic">標題</h3>
-                            <p class="t_center">項目文字敘述</p>
-                            <p class="t_center">項目文字敘述</p>
-                            <p class="t_center">項目文字敘述</p>
+                        <div class="service_wrap">
+                            <div class="service_message">
+                                <h3 class="title_pic">標題</h3>
+                                <p>項目文字敘述項目文字敘述項目文字敘述</p>
+                                <p>項目文字敘述</p>
+                                <p>項目文字敘述</p>
+                            </div>
                         </div>
                         <!-- 回饋 -->
                         <div class="feedback">
                             <b>有幫助？</b>
-                            <a href="#" class="btn"><img src="images/icon_smile.svg" alt="">是</a>
-                            <a href="#" class="btn"><img src="images/icon_sad.svg" alt="">否</a>
+                            <a href="#" class="btn"><img src="images/icon_smile.svg" alt="" class="svg">是</a>
+                            <a href="#" class="btn"><img src="images/icon_sad.svg" alt="" class="svg">否</a>
                         </div>
                         <!-- 訊息發送時間 -->
                         <div class="received_time">AM 09:10</div>
                     </div>
                     <!-- 左：客服 -->
-                    <div class="message_received">
+                    <div class="message_received flow_x">
                         <!-- 客服icon -->
                         <div class="service_icon"><img src="images/icon_header_service.svg" alt=""></div>
                         <!-- 客服訊息內容 -->
-                        <div class="service_message">
-                            項目文字敘述項目文字敘述項目文字敘述
-                        </div>
-                        <div class="service_flow">
-                            <div class="flow_wrap">
-                                flow
+                        <div class="service_wrap">
+                            <div class="service_message">Hi～我是凌網科技智能客服，很高興為您服務 😊 需要什麼協助呢？</div>
+                            <div class="service_flow">
+                                <!-- 水平 scroll -->
+                                <div class="flow_wrap">
+                                    <div class="service_message">
+                                        <div class="img-container">
+                                            <img src="images/img_book.png" alt="" class="contain">
+                                        </div>
+                                        <p class="">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
+                                    </div>
+                                    <div class="service_message">
+                                        <div class="img-container">
+                                            <img src="images/img_book.png" alt="" class="contain">
+                                        </div>
+                                        <p class="t_center">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
+                                    </div>
+                                    <!-- 客服訊息內容 -->
+                                    <div class="service_message">
+                                        <h3 class="title">標題1</h3>
+                                        <p class="">項目文字</p>
+                                        <p class="">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
+                                        <p class="">項目文字</p>
+                                    </div>
+                                    <!-- 客服訊息內容 -->
+                                    <div class="service_message">
+                                        <h3 class="title">標題2</h3>
+                                        <p class="t_center">項目文字置中</p>
+                                        <p class="t_center">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
+                                        <p class="t_center">項目文字置中</p>
+                                    </div>
+                                    <!-- 客服訊息內容 -->
+                                    <div class="service_message">
+                                        <h3 class="title_pic">標題3</h3>
+                                        <p class="">項目文字</p>
+                                        <p class="">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
+                                        <p class="">項目文字</p>
+                                    </div>
+                                    <!-- 客服訊息內容 -->
+                                    <div class="service_message">
+                                        <h3 class="title_pic">標題4</h3>
+                                        <p class="t_center">項目文字置中</p>
+                                        <p class="t_center">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
+                                        <p class="t_center">項目文字置中</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- 訊息發送時間 -->
@@ -140,29 +200,30 @@
             </div>
             <!-- 輸入 -->
             <div class="chat_message_bar">
-                <a class="btn btn_functions" alt="功能開關"><img src="images/icon_function.svg" alt=""></a>
+                <a href="#" class="btn" alt="功能開關" id="btn_2"><img src="images/icon_function.svg" alt="" class="svg"></a>
                 <!-- textarea -->
                 <div class="chat_textarea_wrap">
                     <textarea name="" id="" class="chat_textarea" placeholder="請輸入訊息"></textarea>
-                    <!-- <textarea name="" id="" class="chat_textarea" placeholder="請輸入訊息">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Blanditiis laboriosam perferendis porro dolore voluptatibus cupiditate</textarea> -->
-                    <a href="#" class="btn btn_sent" alt="送出訊息"><img src="images/icon_sent.svg" alt=""></a>
+                    <a href="#" class="btn btn_sent" alt="送出訊息"><img src="images/icon_sent.svg" alt="" class="svg"></a>
                 </div>
-                <a class="btn btn_functions" alt="聽寫輸入"><img src="images/icon_microphone.svg" alt=""></a>
-                <a class="btn btn_functions" alt="語音播放"><img src="images/icon_sound.svg" alt=""></a>
+                <a href="#" class="btn" alt="聽寫輸入"><img src="images/icon_microphone.svg" alt="" class="svg"></a>
+                <a href="#" class="btn" alt="語音播放" id="btn_3"><img src="images/icon_sound.svg" alt="" class="svg"></a>
 
                 <!-- 功能開關 style="display: none;" -->
-                <div class="function_bottom" style="display: none;">
+                <div class="function_bottom" id="item_2" style="display: none;">
                     <div class="function_innerwrap">
-                        <a href="#"><img src="images/icon_function_1.svg" alt=""><b>閱讀喜好</b></a>
-                        <a href="#"><img src="images/icon_function_2.svg" alt=""><b>服務項目2</b></a>
-                        <a href="#"><img src="images/icon_function_3.svg" alt=""><b>服務項目3</b></a>
-                        <a href="#"><img src="images/icon_function_2.svg" alt=""><b>服務項目4</b></a>
-                        <a href="#"><img src="images/icon_function_3.svg" alt=""><b>服務項目5</b></a>
+                        <a href="#" class="act" id="item_3"><span><img src="images/icon_function_1.svg" alt="" class="svg"></span><b>閱讀喜好</b></a>
+                        <a href="#"><span><img src="images/icon_function_2.svg" alt="" class="svg"></span><b>服務項目2</b></a>
+                        <a href="#"><span><img src="images/icon_function_3.svg" alt="" class="svg"></span><b>服務項目3</b></a>
+                        <a href="#"><span><img src="images/icon_function_2.svg" alt="" class="svg"></span><b>服務項目4</b></a>
+                        <a href="#"><span><img src="images/icon_function_3.svg" alt="" class="svg"></span><b>服務項目5</b></a>
                     </div>
                 </div>
-                <!-- 閱讀喜好 -->
-                <div class="function_bottom sticky" style="display: none;">
-                    <div class="btn_close">關閉</div>
+
+
+                <!-- 閱讀喜好 style="display: none;" -->
+                <div class="function_bottom sticky" id="item_4" style="display: none;">
+                    <a href="#" class="btn_close" alt="開關"><img src="images/icon_close.svg" alt="" class="svg"></a>
                     <div class="stuff_title">功能標題</div>
                     <p>功能敘述</p>
                     <div class="slider_wrap">
@@ -173,27 +234,34 @@
                                     <img src="images/img_book.png" alt="" class="contain">
                                 </div>
                                 <p>項目文字項目文字項目文字項目文字項目文字項目文字項目文字項目文字項目文字項目文...</p>
-                                <div class="btn_grp">
-                                    <a href="#" class="btn_normal like">喜歡</a>
-                                    <a href="#" class="btn_normal like act">喜歡</a>
+                                <div class="btn_grp btn_inline">
+                                    <a href="#" class="btn_normal like"><img src="images/icon_close.svg" alt="" class="svg">喜歡</a>
+                                    <a href="#" class="btn_normal like act"><img src="images/icon_love.svg" alt="" class="svg">喜歡</a>
                                     <a href="#" class="btn_normal">完成</a>
                                     <a href="#" class="btn_normal disable">完成</a>
                                 </div>
                             </div>
                         </div>
                         <!-- btn -->
-                        <a href="#" class="btn_prev">前ㄧ項</a>
-                        <a href="#" class="btn_next">下一項</a>
+                        <a href="#" class="btn_prev"><img src="images/icon_arrow_left.svg" alt="前ㄧ項" class="svg"></a>
+                        <a href="#" class="btn_next"><img src="images/icon_arrow_right.svg" alt="下一項" class="svg"></a>
                     </div>
                 </div>
-                <!-- 服務滿意度 -->
+
+
+                <!-- 服務滿意度 display: none; -->
                 <div class="function_bottom sticky" style="display: none;">
-                    <div class="btn_close">關閉</div>
+                    <a href="#" class="btn_close" alt="開關"><img src="images/icon_close.svg" alt="" class="svg"></a>
                     <div class="stuff_title">服務滿意度</div>
                     <p>功能敘述</p>
                     <div class="function_innerwrap sensitivity">
-                        <a href="#"><img src="images/icon_function_1.svg" alt=""><b>滿意</b></a>
-                        <a href="#"><img src="images/icon_function_2.svg" alt=""><b>不滿意</b></a>
+                        <a href="#" class="act"><span><img src="images/icon_smile2.svg" alt="" class="svg"></span><b>滿意</b></a>
+                        <a href="#"><span><img src="images/icon_sad2.svg" alt="" class="svg"></span><b>不滿意</b></a>
+                        <textarea name="" id="" class="chat_textarea" placeholder="請輸入訊息">很有幫助</textarea>
+                    </div>
+                    <div class="btn_grp btn_inline">
+                        <a href="#" class="btn_normal">送出</a>
+                        <a href="#" class="btn_normal disable">送出</a>
                     </div>
                 </div>
             </div>
@@ -204,6 +272,43 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <!-- 客製js -->
     <script src="js/customize.js"></script>
+
+    <script type="text/javascript">
+        // 動態sample
+        $(function(){
+            // 右上 header
+            $('#btn_1').click(function(event) {
+                $('.service_list').slideToggle();
+            });
+
+            // function_bottom
+            $('#btn_2').click(function(event) {
+                $('#item_2').slideToggle();
+            });
+            $('#btn_3').click(function(event) {
+                $('.system_status').fadeIn();
+            });
+
+            // 
+            $('#item_3').click(function(event) {
+                $('#item_4').slideDown();
+            });
+
+            // 
+            $('.btn_close').click(function(event) {
+                $(this).parent('.function_bottom').slideUp();
+            });
+
+            // 點空白處關閉
+            $(document).click(function(event){
+                var _con = $('.chat_message_bar');   // 設定目標區域
+                if(!_con.is(event.target) && _con.has(event.target).length === 0){
+                    $('.function_bottom').slideUp('slow');
+                }
+            });
+
+        });
+    </script>
 </body>
 
 </html>
