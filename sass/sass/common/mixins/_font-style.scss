@@ -1,0 +1,31 @@
+// 定義字體、粗細
+
+@mixin title($weight){
+	font-size: 150%;
+	font-weight: $weight;
+}
+
+@mixin subtitle($weight){
+	font-size: 125%;
+	font-weight: $weight;
+}
+
+@mixin paragraph($weight){
+	font-size: 100%;
+	font-weight: $weight;
+}
+
+
+@mixin caption($weight){
+	font-size: 87.5%;
+	font-weight: $weight;
+}
+
+
+
+// 範例
+// @include title(700);
+// @include subtitle(700);
+// @include paragraph(700);		// bold   700
+// @include paragraph(500);		// normal 500
+// @include caption(500);

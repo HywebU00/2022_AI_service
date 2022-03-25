@@ -1,0 +1,11 @@
+// 定義主色的深淺控制
+
+@mixin color-opacity( $color, $opacity){
+	background: $color;
+	opacity: $opacity;
+}
+
+// 範例
+// div{
+// 	@include color-opacity($primaryColor, .5);
+// }

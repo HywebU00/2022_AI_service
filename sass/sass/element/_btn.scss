@@ -85,7 +85,7 @@ $btn-radius:.2em;
 
 // -------------------------------------------------
 .btn {
-    background: url(../images/btn_bg.svg);
+    background: url(../images/bg_btn_primary10.svg);
     width: 36px;
     height: 36px;
     display: flex;
@@ -100,23 +100,29 @@ $btn-radius:.2em;
         width: 20px;
         height: 20px;
     }
-
-    &:hover{
-        background: url(../images/bg_btnHover.svg);
-    }
     &:focus{
-        background: url(../images/bg_btnFocus.svg);
+        background: url(../images/bg_btn_primary100.svg);
         // svg focus 換色
         .svg{
             path,
             circle,
-            rect{ fill: #fff; }
+            rect{ fill: $Nature-w-Color-100; }
         }
     }
 }
 
 .btn_functions{}
-.btn_sent{}
+.btn_sent{
+    background: transparent;
+    &:focus{
+        background: transparent;
+        .svg{
+            path,
+            circle,
+            rect{ fill: $primaryColor-100; }
+        }
+    }
+}
 
 
 .btn_prev, .btn_next, .btn_close{
@@ -127,19 +133,20 @@ $btn-radius:.2em;
     justify-content: center;
 
     font-size: 0;
-    background: url(../images/btn_bg.svg);
+    background: url(../images/bg_btn_primary10.svg);
+    background-size: contain;
 
     transition: all .3s ease;
 
-    &:hover{ background: url(../images/bg_btnHover.svg); }
-    &:focus{
-        background: url(../images/bg_btnFocus.svg);
+    // &:hover{ background: url(../images/bg_btn_primary30.svg); }
+    &:hover, &:focus{
+        background: url(../images/bg_btn_primary30.svg);
         // svg focus 換色
-        .svg{
-            path,
-            circle,
-            rect{ fill: #fff; }
-        }
+        // .svg{
+        //     path,
+        //     circle,
+        //     rect{ fill: #fff; }
+        // }
     }
 }
 .btn_prev{}
@@ -147,56 +154,51 @@ $btn-radius:.2em;
 .btn_close{}
 
 .btn_normal{
-    // display: inline-block;
     display: flex;
-    // flex-direction: row;
-    // justify-content: center;
     align-items: center;
     padding: 12px 16px;
-    border: 1px solid rgba(120, 149, 172, 0.3);
     box-sizing: border-box;
     border-radius: 30px;
-    color: $primaryColor;
+
+    border: 1px solid transparent;
+    background: $primaryColor-10;
+    color: $primaryColor-100;
 
     transition: all .3s ease;
 
-    &:hover{
-        background: rgba(120, 149, 172, 0.3);
-        color: $primaryColor;
-    }
-    &:focus{
-        background: rgba(120, 149, 172, 1); 
-        color: #fff;
+    &:hover, &:focus{
+        background: $primaryColor-30;
+        color: $primaryColor-100;
     }
 
     &.like{
+        background: $Nature-w-Color-100;
+        border: 1px solid $primaryColor-30;
         &:hover{
-            background: rgba(120, 149, 172, 0.3);
-        }
-        &:focus{
-            background: rgba(120, 149, 172, 1);
-            color: #fff;
-            svg path{ fill: #fff; }
+            border: 1px solid $primaryColor-100;
         }
 
         &.act{
-            // background: url(../images/icon_love.svg) 10px 50% no-repeat, rgba(192, 76, 8, 1);
-            background: rgba(192, 76, 8, 1);
+            background: $NoticeColor;
             color: #fff;
 
-            &:hover{
-                background: darken(rgba(192, 76, 8, 1), 6);
+            &:hover, &:focus{
+                border: 1px solid transparent;
             }
-            &:focus{
-                // background: darken(rgba(192, 76, 8, 1), 10);
-                background: rgba(120, 149, 172, 1);
-            }
+
+            // &:hover{
+            //     background: darken($NoticeColor, 6);
+            // }
+            // &:focus{
+            //     // background: darken($NoticeColor, 10);
+            //     background: $primaryColor-100;
+            // }
         }
     }
 
     &.disable{
-        background: rgba(53, 66, 70, 0.02);
-        color: rgba(53, 66, 70, 0.2);
+        background: $Nature-b-Color-2;
+        color: $Nature-b-Color-20;
         cursor: not-allowed;
 
         &:hover, &:focus{}
