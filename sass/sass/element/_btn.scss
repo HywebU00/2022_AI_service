@@ -163,6 +163,7 @@ $btn-radius:.2em;
     border: 1px solid transparent;
     background: $primaryColor-10;
     color: $primaryColor-100;
+    @include paragraph(700);
 
     transition: all .3s ease;
 

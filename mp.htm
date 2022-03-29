@@ -21,6 +21,22 @@
             position: relative;
         }
 
+        html {
+            overflow: -moz-hidden-unscrollable;
+            height: 100%;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            -ms-overflow-style: none;
+            height: 100%;
+            width: calc(100vw + 18px);
+            overflow: auto;
+        }
+
         /* 視窗尺寸、定位 */
         #chat_wrapper{
             width: 360px;
@@ -86,13 +102,7 @@
                             <div class="user_message">Lorem ipsum dolor sit amet consectetur adipisicing, elit.</div>
                         </div>
                         <!-- 訊息發送時間 -->
-                        <div class="received_time">09:10:36</div>
-                    </div>
-                    <div class="message_user">
-                        <!-- 訊息內容 -->
-                        <div class="user_message">客服無回應，1分鐘過去了</div>
-                        <!-- 訊息發送時間 -->
-                        <div class="received_time">09:11:42</div>
+                        <div class="received_time">09:11:36</div>
                     </div>
                     <!-- 左：客服 -->
                     <div class="message_received">
@@ -138,28 +148,36 @@
                                         <h3 class="title">標題1</h3>
                                         <p class="">項目文字</p>
                                         <p class="">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
-                                        <p class="">項目文字</p>
+                                        <a href="#">項目連結 1</a>
+                                        <a href="#">項目連結 2</a>
+                                        <a href="#">項目連結 3</a>
                                     </div>
                                     <!-- 客服訊息內容 -->
                                     <div class="service_message">
                                         <h3 class="title">標題2</h3>
                                         <p class="t_center">項目文字置中</p>
                                         <p class="t_center">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
-                                        <p class="t_center">項目文字置中</p>
+                                        <a class="t_center" href="#">項目連結 1</a>
+                                        <a class="t_center" href="#">項目連結 2</a>
+                                        <a class="t_center" href="#">項目連結 3</a>
                                     </div>
                                     <!-- 客服訊息內容 -->
                                     <div class="service_message">
                                         <h3 class="title_pic">標題3</h3>
                                         <p class="">項目文字</p>
                                         <p class="">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
-                                        <p class="">項目文字</p>
+                                        <a href="#">項目連結 1</a>
+                                        <a href="#">項目連結 2</a>
+                                        <a href="#">項目連結 3</a>
                                     </div>
                                     <!-- 客服訊息內容 -->
                                     <div class="service_message">
                                         <h3 class="title_pic">標題4</h3>
                                         <p class="t_center">項目文字置中</p>
                                         <p class="t_center">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
-                                        <p class="t_center">項目文字置中</p>
+                                        <a class="t_center" href="#">項目連結 1</a>
+                                        <a class="t_center" href="#">項目連結 2</a>
+                                        <a class="t_center" href="#">項目連結 3</a>
                                     </div>
                                 </div>
                                 <!-- btn -->
@@ -212,11 +230,11 @@
                 <!-- 功能開關 style="display: none;" -->
                 <div class="function_bottom" id="item_2" style="display: none;">
                     <div class="function_innerwrap">
-                        <a href="#" class="act" id="item_3"><span><img src="images/icon_function_1.png" alt="" class="svg"></span><b>閱讀喜好</b></a>
-                        <a href="#"><span><img src="images/icon_function_2.png" alt=""></span><b>服務項目2</b></a>
-                        <a href="#"><span><img src="images/icon_function_3.png" alt=""></span><b>服務項目3</b></a>
-                        <a href="#"><span><img src="images/icon_function_2.png" alt=""></span><b>服務項目4</b></a>
-                        <a href="#"><span><img src="images/icon_function_3.png" alt=""></span><b>服務項目5</b></a>
+                        <a href="#" class="act" id="item_3"><span><img src="images/icon_function_1.svg" alt="" class="svg"></span><b>閱讀喜好</b></a>
+                        <a href="#"><span><img src="images/icon_function_2.svg" alt=""></span><b>服務項目2</b></a>
+                        <a href="#"><span><img src="images/icon_function_3.svg" alt=""></span><b>服務項目3</b></a>
+                        <a href="#"><span><img src="images/icon_function_2.svg" alt=""></span><b>服務項目4</b></a>
+                        <a href="#"><span><img src="images/icon_function_3.svg" alt=""></span><b>服務項目5</b></a>
                     </div>
                 </div>
             </div>
@@ -281,7 +299,7 @@
                         <b>系統將於 60 秒後結束對話。</b>
                     </div>
                     <div class="btn_grp btn_inline">
-                        <a href="#" class="btn_normal close" class="btn_close">結束通話</a>
+                        <a href="#" class="btn_normal close" class="btn_close">結束對話</a>
                     </div>
                 </div>
             </div>
@@ -298,12 +316,16 @@
         $(function(){
             // 
             $('#chat_switch').click(function(event) {
+
+                $('#chat_wrapper').slideToggle();
+
                 if($('a#chat_switch').hasClass('act')){
                     $(this).removeClass('act');
-                    $('#chat_wrapper').removeClass('show');
+                    // $('#chat_wrapper').removeClass('show');
                 }else{
                     $(this).addClass('act');
                     $('#chat_wrapper').addClass('show');
+                    // $('#chat_wrapper').slideUp();
                 }
             });
 
