@@ -372,15 +372,15 @@
                         border-radius: 50%;
                         box-shadow: 0 0 30px $primaryColor-60;
 
-                        &:hover, &:focus{
-                            background: $primaryColor-100;
-                            // svg focus 換色
-                            .svg{
-                                path,
-                                circle,
-                                rect{ fill: #fff; }
-                            }
-                        }
+                        // &:hover, &:focus{
+                        //     background: $primaryColor-100;
+                        //     // svg focus 換色
+                        //     .svg{
+                        //         path,
+                        //         circle,
+                        //         rect{ fill: #fff; }
+                        //     }
+                        // }
                     }
 
                     .btn_prev{ left: 38px; }
@@ -447,9 +447,9 @@
                         // height: 20px;
                     }
 
-                    &:hover{
-                        background: $primaryColor-30; 
-                    }
+                    // &:hover{
+                    //     background: $primaryColor-30; 
+                    // }
                     &:focus {
                         background: $primaryColor-100;
                         color: $Nature-w-Color-100;
@@ -823,15 +823,15 @@
                         background-size: 82px 82px !important;
                     }
 
-                    &:hover{
-                        b{ color: $primaryColor-100; }
-                        span{
-                            background: url(../images/bg_btnOrig-100.svg) 50% 50% no-repeat;
-                            .svg{
-                                path, circle{ fill-opacity: 1; }
-                            }
-                        }
-                    }
+                    // &:hover{
+                    //     b{ color: $primaryColor-100; }
+                    //     span{
+                    //         background: url(../images/bg_btnOrig-100.svg) 50% 50% no-repeat;
+                    //         .svg{
+                    //             path, circle{ fill-opacity: 1; }
+                    //         }
+                    //     }
+                    // }
                     &:focus, &.act{
                         b{ color: $primaryColor-100; }
                         span{
