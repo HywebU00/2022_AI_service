@@ -365,6 +365,7 @@
             $('.btn_close').click(function(event) {
                 $('.function_bottom').slideUp();
                 $('#modal').fadeOut();
+                $('.chat_message_bar').find('a.btn').removeClass('act');
             });
 
             $('.close').click(function(event) {
@@ -372,7 +373,7 @@
                 $('#modal').fadeOut();
             });
 
-            $('.sent').click(function(){
+            $('.sent').click(function(){ㄒ
                 $(this).parents('.function_bottom').slideUp();
                 $('#item_5').show();
             });
