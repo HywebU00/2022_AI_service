@@ -403,14 +403,14 @@
             });
 
             // 點空白處關閉
-            $(document).click(function(event){
-                var _con = $('.chat_message_bar');   // 設定目標區域
-                if(!_con.is(event.target) && _con.has(event.target).length === 0){
-                    $('.chat_message_bar').find('a.btn').removeClass('act');
-                    $('.function_bottom').slideUp('slow');
-                    $('#modal').fadeOut(400);
-                }
-            });
+            // $(document).click(function(event){
+            //     var _con = $('.chat_message_bar');   // 設定目標區域
+            //     if(!_con.is(event.target) && _con.has(event.target).length === 0){
+            //         $('.chat_message_bar').find('a.btn').removeClass('act');
+            //         $('.function_bottom').slideUp('slow');
+            //         $('#modal').fadeOut(400);
+            //     }
+            // });
 
         });
     </script>

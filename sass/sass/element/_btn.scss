@@ -140,7 +140,7 @@ $btn-radius:.2em;
     transition: all .3s ease;
 
     // &:hover{ background: url(../images/bg_btn_primary30.svg); }
-    &:hover, &:focus{
+    &:hover{
         background: url(../images/bg_btn_primary30.svg);
         // svg focus 換色
         // .svg{
@@ -148,6 +148,10 @@ $btn-radius:.2em;
         //     circle,
         //     rect{ fill: #fff; }
         // }
+    }
+
+    &:focus{
+        background: url(../images/bg_btn_primary10.svg);
     }
 }
 .btn_prev{}
@@ -168,8 +172,13 @@ $btn-radius:.2em;
 
     transition: all .3s ease;
 
-    &:hover, &:focus{
+    &:hover{
         background: $primaryColor-30;
+        color: $primaryColor-100;
+    }
+
+    &:focus{
+        background: $primaryColor-10;
         color: $primaryColor-100;
     }
 
