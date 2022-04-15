@@ -535,6 +535,7 @@
                     &:hover{
                         background: $primaryColor-30; 
                     }
+                    &:hover,
                     &:focus {
                         background: $primaryColor-100;
                         color: $Nature-w-Color-100;
