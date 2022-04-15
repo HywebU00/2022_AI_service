@@ -909,15 +909,15 @@
                         background-size: 82px 82px !important;
                     }
 
-                    &:hover{
-                        b{ color: $primaryColor-100; }
-                        span{
-                            background: url(../images/bg_btnOrig-100.svg) 50% 50% no-repeat;
-                            .svg{
-                                path, circle{ fill-opacity: 1; }
-                            }
-                        }
-                    }
+                    // &:hover{
+                    //     b{ color: $primaryColor-100; }
+                    //     span{
+                    //         background: url(../images/bg_btnOrig-100.svg) 50% 50% no-repeat;
+                    //         .svg{
+                    //             path, circle{ fill-opacity: 1; }
+                    //         }
+                    //     }
+                    // }
 
                     &:active{
                         b{
@@ -936,6 +936,18 @@
                             background: url(../images/bg_btn_primary100.svg) 50% 50% no-repeat;
                             .svg{
                                 path, circle{ fill: #fff; fill-opacity: 1; }
+                            }
+                        }
+                    }
+
+                    @media (hover: hover) and (pointer: fine) {
+                        &:hover{
+                            b{ color: $primaryColor-100; }
+                            span{
+                                background: url(../images/bg_btnOrig-100.svg) 50% 50% no-repeat;
+                                .svg{
+                                    path, circle{ fill-opacity: 1; }
+                                }
                             }
                         }
                     }
