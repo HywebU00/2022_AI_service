@@ -225,6 +225,32 @@ $btn-radius:.2em;
 
         &:hover, &:focus{}
     }
+
+    @media screen and (max-width: 767px) {
+
+        &:hover{
+            border: 1px solid transparent;
+            background: $primaryColor-10;
+        }
+
+        &.like{
+            &:hover{
+                border: 1px solid $primaryColor-30;
+                background: $Nature-w-Color-100;
+
+                &.act{
+                    background: $NoticeColor;
+                    color: #fff;
+                }
+            }
+        }
+        &.disable{
+            &:hover{
+                background: $Nature-b-Color-2;
+                color: $Nature-b-Color-20;
+            }
+        }
+    }
 }
 
 
