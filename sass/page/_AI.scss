@@ -439,7 +439,9 @@
                                     &:hover, &:focus{ border-radius: 20px; }
 
                                     &:hover{ background: $primaryColor-30; }
-                                    &:focus{ background: transparent;}
+
+                                    &:focus,
+                                    &.act{ background: transparent;}
 
                                 }
                             }
