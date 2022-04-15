@@ -188,16 +188,16 @@ $btn-radius:.2em;
         &:hover{
             border: 1px solid $primaryColor-100;
         }
+        &:focus{
+            border: 1px solid $primaryColor-30;
+        }
 
         &.act{
             background: $NoticeColor;
             color: #fff;
 
-            &:hover{
+            &:hover, &:focus{
                 border: 1px solid transparent;
-            }
-            &:focus{
-                background: $NoticeColor;
             }
 
             // &:hover{
