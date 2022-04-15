@@ -356,9 +356,14 @@
                     &:hover{
                         background: $primaryColor-10;
                     }
-                    &:focus,
-                    &.act{
+                    &:focus{
                         background: transparent;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        &:hover{
+                            background: transparent;
+                        }
                     }
                 }
             }
@@ -440,9 +445,15 @@
 
                                     &:hover{ background: $primaryColor-30; }
 
-                                    &:focus,
-                                    &.act{ background: transparent;}
+                                    // &:focus{ background: transparent;}
+                                }
 
+                                @media screen and (max-width: 767px) {
+                                    a{
+                                        &:hover{
+                                            background: transparent;
+                                        }
+                                    }
                                 }
                             }
                         }
