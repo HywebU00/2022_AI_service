@@ -126,7 +126,9 @@ $btn-radius:.2em;
 }
 
 
-.btn_prev, .btn_next, .btn_close{
+.btn_prev,
+.btn_next,
+.btn_close{
     width: 36px;
     height: 36px;
     display: flex;
@@ -152,6 +154,12 @@ $btn-radius:.2em;
 
     &:focus{
         background: url(../images/bg_btn_primary10.svg);
+    }
+
+    @media screen and (max-width: 767px) {
+        &:hover{
+            background: url(../images/bg_btn_primary10.svg);
+        }
     }
 }
 .btn_prev{}
