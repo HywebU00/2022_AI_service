@@ -377,6 +377,12 @@
                 $('#item_5').show();
             });
 
+            //
+            $('.sensitivity').find('a').click(function(event) {
+                $('.sensitivity').find('a').removeClass('act');
+                $(this).addClass('act');
+            });
+
             // 點空白處關閉
             // $(document).click(function(event){
             //     var _con = $('.chat_message_bar');   // 設定目標區域
