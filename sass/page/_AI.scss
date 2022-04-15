@@ -356,6 +356,9 @@
                     &:hover{
                         background: $primaryColor-10;
                     }
+                    &:focus{
+                        background: transparent;
+                    }
                 }
             }
 
@@ -433,6 +436,10 @@
                                 a{
                                     padding: 12px;
                                     &:hover, &:focus{ border-radius: 20px; }
+
+                                    &:hover{ background: $primaryColor-30; }
+                                    &:focus{ background: transparent;}
+
                                 }
                             }
                         }
@@ -525,9 +532,9 @@
                         // height: 20px;
                     }
 
-                    // &:hover{
-                    //     background: $primaryColor-30; 
-                    // }
+                    &:hover{
+                        background: $primaryColor-30; 
+                    }
                     &:focus {
                         background: $primaryColor-100;
                         color: $Nature-w-Color-100;
@@ -901,15 +908,27 @@
                         background-size: 82px 82px !important;
                     }
 
-                    // &:hover{
-                    //     b{ color: $primaryColor-100; }
-                    //     span{
-                    //         background: url(../images/bg_btnOrig-100.svg) 50% 50% no-repeat;
-                    //         .svg{
-                    //             path, circle{ fill-opacity: 1; }
-                    //         }
-                    //     }
-                    // }
+                    &:hover{
+                        b{ color: $primaryColor-100; }
+                        span{
+                            background: url(../images/bg_btnOrig-100.svg) 50% 50% no-repeat;
+                            .svg{
+                                path, circle{ fill-opacity: 1; }
+                            }
+                        }
+                    }
+
+                    &:active{
+                        b{
+                            @include paragraph(700);
+                            color: $primaryColor-50;
+                        }
+                        span{
+                            background: url(../images/bg_btnOrig.svg) 50% 50% no-repeat;
+                            background-size: 82px 82px !important;
+                        }
+                    }
+
                     &:focus, &.act{
                         b{ color: $primaryColor-100; }
                         span{
