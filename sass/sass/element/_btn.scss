@@ -193,8 +193,11 @@ $btn-radius:.2em;
             background: $NoticeColor;
             color: #fff;
 
-            &:hover, &:focus{
+            &:hover{
                 border: 1px solid transparent;
+            }
+            &:focus{
+                background: $NoticeColor;
             }
 
             // &:hover{
