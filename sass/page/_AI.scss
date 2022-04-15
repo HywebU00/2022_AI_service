@@ -356,7 +356,8 @@
                     &:hover{
                         background: $primaryColor-10;
                     }
-                    &:focus{
+                    &:focus,
+                    &.act{
                         background: transparent;
                     }
                 }
@@ -535,8 +536,9 @@
                     &:hover{
                         background: $primaryColor-30; 
                     }
-                    &:hover,
-                    &:focus {
+
+                    &:focus,
+                    &.act{
                         background: $primaryColor-100;
                         color: $Nature-w-Color-100;
 
@@ -919,17 +921,6 @@
                         }
                     }
 
-                    // &:active{
-                    //     b{
-                    //         @include paragraph(700);
-                    //         color: $primaryColor-50;
-                    //     }
-                    //     span{
-                    //         background: url(../images/bg_btnOrig.svg) 50% 50% no-repeat;
-                    //         background-size: 82px 82px !important;
-                    //     }
-                    // }
-                    
                     &:focus,
                     &.act{
                         b{ color: $primaryColor-100; }
@@ -940,18 +931,6 @@
                             }
                         }
                     }
-
-                    // @media (hover: hover) and (pointer: fine) {
-                    //     &:hover{
-                    //         b{ color: $primaryColor-100; }
-                    //         span{
-                    //             background: url(../images/bg_btnOrig-100.svg) 50% 50% no-repeat;
-                    //             .svg{
-                    //                 path, circle{ fill-opacity: 1; }
-                    //             }
-                    //         }
-                    //     }
-                    // }
                 }
 
                 // 滿意度回饋結束
