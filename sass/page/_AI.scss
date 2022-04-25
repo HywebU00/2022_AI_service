@@ -77,23 +77,23 @@
     font-size: 0;
     transition: all 600ms ease;
 
-    &:hover{
-        // background: url(../images/icon_service_man.svg) 50% 50% no-repeat,
-        //             url(../images/bg_btn_primary50.svg) 50% 50% no-repeat;
-        // background-size: 42px 42px, contain;
-    }
+    // &:hover{
+    //     background: url(../images/icon_service_man.svg) 50% 50% no-repeat,
+    //                 url(../images/bg_btn_primary50.svg) 50% 50% no-repeat;
+    //     background-size: 42px 42px, contain;
+    // }
 
-    &.act{
-        // background: url(../images/icon_arrowdown.svg) 50% 50% no-repeat,
-        //             url(../images/bg_btn_primary100.svg) 50% 50% no-repeat;
-        // background-size: 42px 42px, contain;
+    // &.act{
+    //     background: url(../images/icon_arrowdown.svg) 50% 50% no-repeat,
+    //                 url(../images/bg_btn_primary100.svg) 50% 50% no-repeat;
+    //     background-size: 42px 42px, contain;
 
-        &:hover{
-            // background: url(../images/icon_arrowdown.svg) 50% 50% no-repeat,
-            //             url(../images/bg_btn_primary50.svg) 50% 50% no-repeat;
-            // background-size: 42px 42px, contain;
-        }
-    }
+    //     &:hover{
+    //         background: url(../images/icon_arrowdown.svg) 50% 50% no-repeat,
+    //                     url(../images/bg_btn_primary50.svg) 50% 50% no-repeat;
+    //         background-size: 42px 42px, contain;
+    //     }
+    // }
 
     // CSS 超橢
     filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, .25)); //隱影
@@ -117,7 +117,9 @@
     }
 
     &.act{
-        .superellipse{}
+        .superellipse{
+            background: url(../images/icon_arrowdown.svg) 50% 50% no-repeat, $primaryColor-50;
+        }
     }
 
     img{
